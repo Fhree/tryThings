@@ -1,1 +1,19 @@
-<p>invert-order works!</p>
+<div>
+  <div>
+    <h4>Write something below!</h4>
+  </div>
+  <div>
+    <input type="text" id="sourceInvertText" [(ngModel)]="source" (ngModelChange)="invert()">
+  </div>
+  <div>
+    <label for="resultInverText">Using for on the string value</label>
+    <input type="text" id="resultInverText" [(ngModel)]="resultFor" disabled>
+  </div>
+  <div>
+    <label for="resultInverText">Using Array.reverse on the string value</label>
+    <input type="text" id="resultInverText" [(ngModel)]="resultReverse" disabled>
+  </div>
+  <div>
+    <button class="btn btn-secondary" (click)="clean()">Clean</button>
+  </div>
+</div>
